@@ -1,0 +1,33 @@
+package edu.escuelaing.arep.Calculadora.Services;
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+
+import java.text.DecimalFormat;
+
+import edu.escuelaing.arep.Calculadora.CalculadoraMS.Calculadora;
+import  edu.escuelaing.arep.Calculadora.Linkedist.*;
+
+public class Service {
+
+    public static JsonObject getResult(JsonArray numbers) {
+
+        Linkedist linkedList = new Linkedist();
+
+        for(int i= 0; i < numbers.size(); i++) {
+
+            linkedList.addNode(numbers.get(i));
+        }
+
+        DecimalFormat decim = new DecimalFormat("0.00");
+
+        String Media = decim.format(Calculadora.Media(linkedList));
+        String Desviacion_estandar = decim.format(Calculadora.Desviacion_estandar(linkedList));
+
+        JsonObject jsonObject = new JsonObject();
+
+        jsonObject.addProperty("Media", String.valueOf(Media));
+        jsonObject.addProperty("Desviacion_estandar", String.valueOf(Desviacion_estandar));
+        return jsonObject;
+    }
+}
