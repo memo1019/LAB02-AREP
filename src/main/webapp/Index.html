@@ -4,7 +4,7 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
         function doRequest() {
-            axios.post('https://mean-deviation.herokuapp.com/operacion', {
+            axios.post('https://blooming-mesa-19180/operacion', {
                 value: toList()
             }).then(function f (res){
                 document.getElementById("result").innerHTML = "La Media es: "+ res.data.Media+"&lt;br>"+
