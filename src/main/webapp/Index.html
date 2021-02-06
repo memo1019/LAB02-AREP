@@ -3,12 +3,12 @@
 <head>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
-        function doRequest() {
+        function Respuesta() {
             axios.post('https://blooming-mesa-19180.herokuapp.com/operacion', {
                 value: toList()
             }).then(function f (res){
                 document.getElementById("result").innerHTML = "La Media es: "+ res.data.Media+"<br>"+
-                    "La Desviacion Estandar es: "+res.data["Desviacion_estandar"];
+                    "La Desviacion Estandar es: "+res.data.Desviacion_estandar;
             })
         }
 
@@ -25,7 +25,7 @@
 List of numbers:<br>
 <input type="text" id="list">
 <br>
-<input type="submit" value="Submit" onclick="doRequest()">
+<input type="submit" value="Submit" onclick="Respuesta()">
 <br>
 Please insert the numbers with blank spaces. ej: 15.0 69.9 6
 <br>
