@@ -66,7 +66,7 @@ si desea ver el javadoc se encuentra en el directorio
 /target/site
 ```
 
-Podemos ver la descripcion del proyecto en este pdf [file](/src/site/Resources/lab1.pdf) mostrando el diseño y la estructura del proyecto
+Podemos ver la descripcion del proyecto en este pdf [file](/src/site/Resources/lab2.pdf) mostrando el diseño y la estructura del proyecto
 
 ## Construido con
 
