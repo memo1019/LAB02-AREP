@@ -24,7 +24,7 @@ public class SparkWebApp {
 
         get("operacion", (req, res) -> {
 
-            String page = FileUtils.readFileToString(new File("src/main/webapp/index.html"), StandardCharsets.UTF_8);
+            String page = FileUtils.readFileToString(new File("src/main/resources/index.html"), StandardCharsets.UTF_8);
             return page;
         });
     }
