@@ -61,6 +61,7 @@ Podemos ver la descripcion del proyecto en este pdf [file](/src/site/Resources/l
 
 * [Maven](https://maven.apache.org/) - Dependency Management
 * Git - Version Control  
+* [Heroku](https://www.heroku.com)
 
 ## Despliegue en Heroku
 
