@@ -1,6 +1,6 @@
-# AREP LABORATORIO 2 - INTRODUCCION A COMPLEJOS SISTEMAS JAVA, MVN, AND GIT 
+# AREP LABORATORIO 2 - INTRODUCCIÓN AL DISEÑO DE SISTEMAS INFORMÁTICOS
 
-se realizo el taller propuesto de "Introducción a los sistemas complejos, JAVA,MVN y GIT" utilizando listas enlazadas
+se realizo el taller propuesto de "INTRODUCCIÓN AL DISEÑO DE SISTEMAS INFORMÁTICOS" con ayuda del lavoratorio anteriormente realizado "Introducción a los sistemas complejos, JAVA,MVN y GIT" utilizando listas enlazadas
 
 ### PREREQUISITOS
 
