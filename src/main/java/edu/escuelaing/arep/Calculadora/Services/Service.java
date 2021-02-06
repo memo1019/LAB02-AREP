@@ -20,10 +20,10 @@ public class Service {
             linkedList.addNode(Double.parseDouble(String.valueOf(number)));
         }
 
-        DecimalFormat decim = new DecimalFormat("0.00");
+        DecimalFormat decimal = new DecimalFormat("0.00");
 
-        String Media = decim.format(Calculadora.Media(linkedList));
-        String Desviacion_estandar = decim.format(Calculadora.Desviacion_estandar(linkedList));
+        String Media = decimal.format(Calculadora.Media(linkedList));
+        String Desviacion_estandar = decimal.format(Calculadora.Desviacion_estandar(linkedList));
 
         JsonObject jsonObject = new JsonObject();
 

@@ -15,17 +15,18 @@ public class SparkWebApp {
 
     public static void main(String[] args) {
         port(getPort());
+
+
+        get("operacion", (req, res) -> {
+
+            String page = FileUtils.readFileToString(new File("src/main/resources/operacion.html"), StandardCharsets.UTF_8);
+            return page;
+        });
         post("operacion", (req, res) -> {
 
             JsonObject jsonObject = new JsonParser().parse(req.body()).getAsJsonObject();
             res.type("application/json");
             return Service.getResult(jsonObject.get("value").getAsJsonArray());
-        });
-
-        get("operacion", (req, res) -> {
-
-            String page = FileUtils.readFileToString(new File("src/main/resources/index.html"), StandardCharsets.UTF_8);
-            return page;
         });
     }
     static int getPort() {
