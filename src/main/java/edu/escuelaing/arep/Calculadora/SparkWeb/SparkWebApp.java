@@ -12,6 +12,10 @@ import static spark.Spark.*;
 
 
 public class SparkWebApp {
+    /**
+     *Es la clase principal que llama la pagina web y pone a correr el servicio en esta pagina
+     * @param args argumentos para correr
+     * */
 
     public static void main(String[] args) {
         port(getPort());
@@ -26,9 +30,13 @@ public class SparkWebApp {
 
             JsonObject jsonObject = new JsonParser().parse(req.body()).getAsJsonObject();
             res.type("application/json");
-            return Service.getResult(jsonObject.get("value").getAsJsonArray());
+            return Service.Servicio(jsonObject.get("value").getAsJsonArray());
         });
     }
+    /**
+     *se encarga de retornar el puerto por el cual esta corriendo el servidor
+     * @return int obtiene el intero del puerto que se corre
+     * */
     static int getPort() {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));

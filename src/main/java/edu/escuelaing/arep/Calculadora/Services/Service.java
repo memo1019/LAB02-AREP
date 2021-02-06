@@ -11,7 +11,13 @@ import  edu.escuelaing.arep.Calculadora.Linkedist.*;
 
 public class Service {
 
-    public static JsonObject getResult(JsonArray numbers) {
+    /**
+     *se encarga de dar el resultado de la media y la desviacion estandar por medio de un servicio a la pagina web creada con JSON
+     * @param numbers recibe un arreglo de la pagina web la cual se encarga de verificar y sacar los valores
+     * @return JsonObject objeto JSON conectado a la pagina
+     * */
+
+    public static JsonObject Servicio(JsonArray numbers) {
 
         Linkedist<Double> linkedList = new Linkedist();
 
