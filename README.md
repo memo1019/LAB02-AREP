@@ -31,7 +31,7 @@ Finalmente coonstruiremos y compilaremos el proyecto para asi poder ejecutarlo.
 Para correr el programa tenemos que ejecutar el siguiente comando :
 
 ```
-java -cp target/miprimera-app-1.0-SNAPSHOT.jar edu.escuelaing.AREP.Calculadora.CalculadoraMS.Calculadora
+java -cp target/classes;target/dependency/* edu.escuelaing.arep.Calculadora.SparkWeb.SparkWebApp
 ```
 con este comando podemos ejecutar la clase encargado de hacer el uso de la ejecucion, para asi ver con una entrada de texto el resultado de la media y la desviacion estandar
 ## Diseño
@@ -39,7 +39,7 @@ con este comando podemos ejecutar la clase encargado de hacer el uso de la ejecu
 ![Diagrama de Clases](/src/site/Resources/Diagrama%20de%20clases.png)
 
 ## Documentacion
-pararealizar la documentacion de javadoc use estos comandos y aqui podra llevar acabo el proceso de creacion de esta documentacion.
+para realizar la documentacion de javadoc use estos comandos y aqui podra llevar acabo el proceso de creacion de esta documentacion.
 ```
 $ mvn javadoc:javadoc
 $ mvn javadoc:jar
