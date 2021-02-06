@@ -33,7 +33,12 @@ Para correr el programa tenemos que ejecutar el siguiente comando :
 ```
 java -cp target/classes;target/dependency/* edu.escuelaing.arep.Calculadora.SparkWeb.SparkWebApp
 ```
-con este comando podemos ejecutar la clase encargado de hacer el uso de la ejecucion, para asi ver con una entrada de texto el resultado de la media y la desviacion estandar
+Luego vaya a http://localhost:4567/operacion para ver el programa desplegado localmente
+
+Ponga sus casos de prueba (Sólo recibirá números enteros y Float(.) separados por coma "," en otros casos el programa le mostrará y error de entrada en su navegador.
+
+La aplicación se despliega con heroku y el enlace está en la parte inferior de este documento (botón Heroku)
+
 ## Diseño
 
 ![Diagrama de Clases](/src/site/Resources/Diagrama%20de%20clases.png)
