@@ -1,6 +1,7 @@
 package edu.escuelaing.arep.Calculadora.Services;
 
 import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
 import java.text.DecimalFormat;
@@ -12,11 +13,11 @@ public class Service {
 
     public static JsonObject getResult(JsonArray numbers) {
 
-        Linkedist linkedList = new Linkedist();
+        Linkedist<Double> linkedList = new Linkedist();
 
-        for(int i= 0; i < numbers.size(); i++) {
+        for(JsonElement number:numbers) {
 
-            linkedList.addNode(numbers.get(i));
+            linkedList.addNode(Double.parseDouble(String.valueOf(number)));
         }
 
         DecimalFormat decim = new DecimalFormat("0.00");
