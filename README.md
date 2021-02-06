@@ -8,6 +8,8 @@ Los prerrequisitos que manejaremos para lograr con exito el desarrollo del labor
 - Maven
 - Git  
 - Java
+- SparkWeb
+- Heroku
 
 ### Ejecucion e instalacion
 se debe clonar el proyecto con el siguiente comando:
@@ -17,22 +19,12 @@ git clone https://github.com/memo1019/miprimera-app
 ```
 luego ingresaremos a la carpeta dede el cmd o la consola:
 ```
-cd /miprimera-app
+cd /Lab02-AREP
 ```
 Finalmente coonstruiremos y compilaremos el proyecto para asi poder ejecutarlo.
 ```
  mvn package
 ```
-## Correr Pruebas
-
-para correr pruebas podemos usar el comando:
-
-```
- mvn test
-```
-## Pruebas 
-
-![Pruebas](/src/site/Resources/pruebas.png)
 
 ## Correr
 
@@ -69,6 +61,11 @@ Podemos ver la descripcion del proyecto en este pdf [file](/src/site/Resources/l
 
 * [Maven](https://maven.apache.org/) - Dependency Management
 * Git - Version Control  
+
+## Despliegue en Heroku
+
+[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://blooming-mesa-19180.herokuapp.com/operacion)
+
 
 ## Autor
 
