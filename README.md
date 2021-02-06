@@ -25,6 +25,12 @@ Finalmente coonstruiremos y compilaremos el proyecto para asi poder ejecutarlo.
 ```
  mvn package
 ```
+## Pruebas
+las podra ver corriendo con el comando 
+
+```
+ mvn test
+```
 
 ## Correr
 
